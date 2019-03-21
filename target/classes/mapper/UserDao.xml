@@ -5,7 +5,10 @@
 <mapper namespace="com.dz.dao.UserDao">
 
     <select id="selectUser" resultType="User" parameterType="int">
-        SELECT * FROM user WHERE id = #{id}
+        SELECT * FROM User WHERE id = #{id}
     </select>
 
+    <select id="getUsers" resultType="User" >
+        SELECT * FROM User
+    </select>
 </mapper>
